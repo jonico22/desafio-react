@@ -1,0 +1,210 @@
+.step02 {
+    padding-top: 4em;
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    &__info {
+        color:$title;
+        font-size: 16px;
+        line-height: 24px;
+        span {
+            position: relative;
+            left: 20px;
+            top: -7px;
+        }
+        &-text {
+            color: $gray;
+        }
+        &-progress {
+            position: relative;
+            left: 10px;
+        }
+    }
+    &__detail {
+        color: $text;
+        &-back {
+            background-color: none;
+            background: none;
+            border: 0;
+            color:gray;
+            font-size: 12px;
+            span {
+                position: relative;
+                left: 10px;
+                top: -8px;
+            }
+        }
+        &-title {
+            font-size: 40px;
+            line-height: 48px;
+            color: $title;
+            margin: 0.5em 0;
+            span {
+                color: $red;
+            }
+        }
+        &-box {
+            border: 3px solid #F0F2FA;
+            border-radius: 12px;
+            margin: 3em 0;
+            max-width: 384px;
+            height: 172px;
+            background-color: white;
+            display: flex;
+            box-sizing: border-box;
+            .box {
+                min-width: 190px;
+                min-height: 76px;
+                padding: 1em;
+                font-size: 20px;
+                line-height: 28px;
+                span {
+                    display: block;
+                    color: $gray;
+                    font-size: 12px;
+                }
+            }
+            img {
+                height: 179px;
+                position: relative;
+                top: -13px;
+            }
+        }
+        &-sum {
+            display: flex;
+            font-size: 16px;
+            padding-bottom: 2em !important;
+            border-bottom: 1px solid #E4E8F7;
+            margin-bottom: 2em;
+            max-width: 384px;
+            span {
+                font-size: 12px;
+            }
+            .box-sum {
+                border: 1px solid #C5CBE0;
+                color: $title;
+                font-size: 16px;
+                min-width: 160px;
+                height: 56px;
+                box-sizing: border-box;
+                padding: 0.7em;
+                margin-left: 2.4em;
+                strong {
+                    margin: 1em;
+                }
+                button {
+                    border: 0;
+                    background: none;
+                    color: #6F7DFF;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 0.2em 0.5em ;
+                }
+                
+            }
+        }
+        &-add {
+            font-size: 20px;
+            line-height: 28px;
+            color: $title;
+        }
+        &-list {
+            display: flex;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 16px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            li {
+                min-width: 128px;
+                height: 32px;
+                padding-bottom: 2em;
+            }
+            .active {
+                color: $red;
+                border-bottom: 1px solid $red;
+            }
+        }
+        &-options {
+            font-size: 14px;
+            line-height: 24px;
+            color: $text;
+            max-width: 384px;
+            color: $text;
+            li {
+                display: flex;
+                align-items: flex-start;
+                padding: 1.5em 0;
+                border-bottom: 1px solid #E4E8F7;
+                margin-top: 1em;
+                .box-context {
+                    margin-left: 2em;
+                    strong {
+                        font-size: 20px;
+                        line-height: 28px;
+                        display: block;
+                    }
+                    button {
+                        background: none;
+                        border: 0;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: $acian;
+                        display: flex;
+                        align-items: center;
+                        margin: 1em 0;
+                        img {
+                            margin-right: 1.5em;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+    &__finish {
+        font-size: 14px;
+        line-height: 24px;
+        color: $title;
+        &-text {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.6px;
+            display: block;
+        }
+        &-amount {
+            font-size: 28px;
+            line-height: 36px;
+            display: block;
+        }
+        &-leyend {
+            font-size: 12px;
+            line-height: 20px;
+            display: block;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-include {
+            font-size: 14px;
+            line-height: 24px;
+            color: $text;
+            li {
+                margin-bottom: 0.5em;
+            }
+        }
+        button {
+            background: $red;
+            border: 0;
+            color: white;
+            border-radius: 8px;
+            min-width: 224px;
+            height: 48px;
+        }
+    }
+}
+

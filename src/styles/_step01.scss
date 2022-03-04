@@ -1,0 +1,116 @@
+.step01 {
+    margin-top: 3rem;
+    .fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background: url('../assets/fondo_home.jpg') no-repeat;
+        background-color: #ECF0FF;
+        z-index: -1;
+    }
+    &__info {
+        margin-top: 1em;
+        font-size: 14px;
+        height: 100%;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        strong {
+            font-size: 12px;
+            display: block;
+        }
+        h1{
+            font-size: 36px;
+            line-height: 48px;
+            color: $red;
+            span {
+                color: $title;
+            }
+        }
+        p {
+            color: $text;
+            font-size: 14px;
+        }
+    }
+    &__form {
+        margin-top: 1em;
+        input[type='text'] {
+            min-width: 288px;
+            height: 56px;
+            color: $gray;
+            line-height: 24px;
+            padding: 0 16px;
+            margin-bottom: 1em;
+            border: 1px solid #C5CBE0;
+        }
+        .form-select {
+            display: flex;
+            select {
+                height: 58px;
+                border: 1px solid #C5CBE0;
+                padding: 0 0.8em;
+            }
+            input {
+                min-width: 208px;
+            }
+        }
+        p {
+            margin: 0;
+            position: relative;
+            top: -10px;
+            font-size: 12px;
+            color: $red;
+        }
+        h2 {
+            font-size: 28px;
+            color: $text;
+        }
+       
+        
+        ul {
+            font-size: 14px;
+            color : $gray;
+            font-family: $roboto;
+            line-height: 20px;
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 0;
+            a {
+                color : $gray;
+            }
+        }
+        input[type='checkbox']{
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            box-shadow: none;
+            border: 1px solid #C5CBE0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance:none;
+            &:checked:after {
+                content: '✅';
+                position: relative;
+                left: -1px;
+                top: -1px;
+            }
+          }
+        button {
+            color: white;
+            background-color: $red;
+            border-radius: 8px;
+            border: 0;
+            font-size: 14px;
+            text-align: center;
+            line-height: 16px;
+            width: 192px;
+            height: 56px;
+
+        }
+    }
+}

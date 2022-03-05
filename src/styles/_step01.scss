@@ -9,6 +9,19 @@
         background: url('../assets/fondo_home.jpg') no-repeat;
         background-color: #ECF0FF;
         z-index: -1;
+        @media (max-width: 480px) {
+            background:none;
+            background-color: #F7F8FC;
+            width: 100%;
+            height: 35%;
+        }
+    }
+    .img-home-responsive{
+        display: flex;
+        img {
+            position: relative;
+            left: 15px;
+        }
     }
     &__info {
         margin-top: 1em;
@@ -37,6 +50,9 @@
     }
     &__form {
         margin-top: 1em;
+        @media (max-width: 480px) {
+            text-align: center;
+        }
         input[type='text'] {
             min-width: 288px;
             height: 56px;
@@ -48,6 +64,9 @@
         }
         .form-select {
             display: flex;
+            @media (max-width: 480px) {
+                justify-content: center;
+            }
             select {
                 height: 58px;
                 border: 1px solid #C5CBE0;
@@ -79,6 +98,9 @@
             text-decoration: none;
             list-style-type: none;
             padding: 0;
+            @media (max-width: 480px) {
+                justify-content: center;
+            }
             a {
                 color : $gray;
             }

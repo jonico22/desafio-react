@@ -1,12 +1,6 @@
 $columns: 37;
 $gap: 30px;
-$breakpoints: (
-    xs: 480px,
-    sm: 768px,
-    md: 960px,
-    lg: 1170px,
-    xl: 1280px
-);
+
 
 @mixin create-selectors($breakpoint: null) {
     $infix: if($breakpoint == null, '', '-#{$breakpoint}');
@@ -32,12 +26,10 @@ $breakpoints: (
     grid-template-columns: repeat($columns, 1fr);
     grid-gap: $gap;
     gap: $gap;
+    @media (max-width: 480px) {
+        grid-gap: 10px;
+        gap: 10px;
+    }
 }
 
 @include create-selectors;
-
-@each $breakpoint, $width in $breakpoints {
-    @media (min-width: $width) {
-        @include create-selectors($breakpoint);
-    }
-}

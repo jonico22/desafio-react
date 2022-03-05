@@ -11,6 +11,8 @@ header {
 .contact {
   color: $text;
   font-family: $roboto;
+  position: relative;
+  top: -5px;
   &__text {
     font-size: 12px;
     margin-right: 10px;
@@ -29,4 +31,8 @@ header {
 .container {
     margin-left: 5rem;
     margin-right: 5rem;
+  @media (max-width: 480px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

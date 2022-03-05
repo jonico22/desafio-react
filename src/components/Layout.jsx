@@ -30,6 +30,7 @@ const Layout = ()=>{
     const [showStep03, setShowStep03] = useState(false)
     const [dataUser, setDataUser] = useState([])
     const [dataCar, setDataCar] = useState([])
+ 
     const {data} = useFetch('https://jsonplaceholder.typicode.com/users')
 
     const  random_item = (items) =>{
@@ -38,7 +39,6 @@ const Layout = ()=>{
     const getData = async (res)=>{
         setDataUser(random_item(data))
         let car = random_item(listCars)
-        console.log()
         setDataCar(
             {
                 "placa" : res.placa,
@@ -55,6 +55,10 @@ const Layout = ()=>{
         setShowStep02(false)
     }
 
+    const handleFinish = ()=>{
+        setShowStep02(false)
+        setShowStep03(true)
+    }
 
 
     return (
@@ -62,8 +66,14 @@ const Layout = ()=>{
         <div className="container">
             <Header />
             { showStep01 && <Step01 save={getData} />}
-            { showStep02 && <Step02 back={handleBack} user={dataUser} car={dataCar}/>}
-            { showStep03 && <Step03 user={dataUser} />}
+            { showStep02 && <Step02
+             back={handleBack} 
+             user={dataUser} 
+             car={dataCar}
+             next={handleFinish}
+             />
+             }
+            { showStep03 && <Step03 user={dataUser}/>}
         </div>
         </>
     )

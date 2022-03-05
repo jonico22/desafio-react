@@ -31,6 +31,7 @@ const Form = ({ saveData }) => {
                         <input className="w-full"
                             type="text"
                             id="nro"
+                            maxLength={8}
                             placeholder="Nro. de doc"
                             value={formik.values.nro}
                             onChange={formik.handleChange}
@@ -46,6 +47,7 @@ const Form = ({ saveData }) => {
                     type="text"
                     id="celular"
                     placeholder="Celular"
+                    maxLength={9}
                     value={formik.values.celular}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}

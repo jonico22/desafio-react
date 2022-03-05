@@ -4,10 +4,10 @@ El proyecto se generado con create-react-app
 
 ## Librerias utilizadas
 
-formik .- Para libreria que ayuda y facilita la implementacion de formularios y con mayor implementacion en varios proyectos.
-yup .- Libreria que complementa a la libreria para las validaciones y hace mas facil el desarrollo
-node-sass .- Libreria para compilar sass(scss) con nodejs 
-react-hook-media-query .-  libreria que ayuda para manejar media queries con react hooks , hace mas limpio el codigo
+- formik .- Para libreria que ayuda y facilita la implementacion de formularios y con mayor implementacion en varios proyectos.
+- yup .- Libreria que complementa a la libreria para las validaciones y hace mas facil el desarrollo
+- node-sass .- Libreria para compilar sass(scss) con nodejs 
+- react-hook-media-query .-  libreria que ayuda para manejar media queries con react hooks , hace mas limpio el codigo
 
 ## Tareas
 

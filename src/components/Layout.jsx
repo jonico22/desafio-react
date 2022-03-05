@@ -2,7 +2,7 @@ import Header from "./Header"
 import Step01 from './sections/Step01'
 import Step02 from './sections/Step02'
 import Step03 from './sections/Step03'
-import React, {useState,useEffect} from "react"
+import React, {useState} from "react"
 import { useFetch } from "../hooks/useFetch";
 
 const listCars = [
